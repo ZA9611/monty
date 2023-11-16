@@ -6,7 +6,7 @@
  * @new_node: Pointer to the new node.
  * @ln: Interger representing the line number of of the opcode.
  */
-void add_of_stack(stack_t **new_node, _attribute_((unused))unsigned int ln)
+void add_of_stack(stack_t **new_node,__attribute__((unused))unsigned int ln)
 {
 	stack_t *tp;
 
@@ -72,5 +72,5 @@ void print_top(stack_t **stack, unsigned int line_number)
 {
 	if (stack == NULL || *stack == NULL)
 		mor_err(6, line_number);
-	printf("%d\n", (*stack)->n);
+	printf("%d\n", (*stack)->n);
 }

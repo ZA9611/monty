@@ -156,5 +156,5 @@ void call_fun(op_func func, char *op, char *val, int ln, int format)
 			add_of_queue(&n_ode, ln);
 	}
 	else
-		func(&head, ln);
+		func(&head, ln);
 }
